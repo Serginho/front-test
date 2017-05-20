@@ -1,20 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
-import { AppComponent } from './app.component';
+import {BrowserModule} from '@angular/platform-browser';
+import {LOCALE_ID, NgModule} from '@angular/core';
+import {AppComponent} from './app.component';
+import {HeaderModule} from './header/header.module';
+import {BoxComponent} from './shared/box/box.component';
+import {SelectorModule} from './selector/selector.module';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BoxComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    HeaderModule,
+    SelectorModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -1,3 +1,52 @@
-<h1>
-  {{title}}
-</h1>
+<app-header></app-header>
+<div class="container">
+  <app-box class="header">
+    <h1>Test Front-end</h1>
+    <p>In this exercise, you will have to build a component exactly like this
+      one.</p>
+  </app-box>
+  <app-box class="component">
+    <form [formGroup]="form" novalidate>
+      <img class="fake-component" src="assets/fake-component.png">
+      <!--<app-selector [days]="days"-->
+                    <!--[multiple]="true"-->
+                    <!--formControlName="selectedDays"></app-selector>-->
+    </form>
+  </app-box>
+  <app-box class="component-description">
+    <h3>TODO</h3>
+    <img src="assets/component-interface.png" alt="Component interface">
+    <ol>
+      <li>Design the component using CSS and HTML.</li>
+      <li>Make it work with the Array&lt;Day&gt; generated in the AppComponent
+        (days)
+      </li>
+      <li>Add pagination to the component and the buttons to control it. Look at
+        the shadows that appears in the both sides if there are more pagination.
+      </li>
+      <li>Make it responsive. If the browser is resized or the parent container
+        decreases, the component should adapt to its parent. To simply the
+        problem, if the component isn't in the first page while is being
+        resized, you will reset the pagination in that event.
+      </li>
+      <li>Add an input attribute [multiple]="boolean" to the component. If
+        multiple true, the component will allow selecting more than one date, in
+        other case, only once.
+      </li>
+      <li>Make it compatible with NgModel.
+        &lt;app-selector [(ngModel)]="model"&gt;&lt;/app-selector>
+      </li>
+      <li>
+        Do test cases you consider necessary in order to check the component
+        works properly.
+      </li>
+      <li>Run <b>npm run lint</b> and fix lint issues.</li>
+      <li>Generate a git patch with all changes and send it to sergio@tulotero.es.</li>
+    </ol>
+    Good luck! :-)
+  </app-box>
+  <app-box>
+    <h3>DEMO</h3>
+    <video src="assets/demo.mp4" controls></video>
+  </app-box>
+</div>
